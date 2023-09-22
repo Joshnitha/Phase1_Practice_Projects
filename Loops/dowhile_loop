@@ -1,0 +1,16 @@
+package javaprograms;
+
+public class DowhileLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i=1;
+		do {
+			System.out.println("today is monday");
+		i++;
+		}
+		
+while(i<=7);
+	System.out.println("printed the msg.iam out of the loop");
+	}
+}
