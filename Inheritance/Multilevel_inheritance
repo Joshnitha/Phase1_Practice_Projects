@@ -1,0 +1,77 @@
+package inheritancesDemo;
+
+public class Base {
+	
+	public void openbrowser(String browser)
+	{
+		System.out.println("open the browser" + browser);
+	}
+	public void login(String username , String password)
+	{
+		System.out.println("enter username:" + username);
+		System.out.println("enter password:" + password);
+		System.out.println("sign into mailbox");
+	}
+	public void logout()
+	{
+		System.out.println("clink on logout button");
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+package inheritancesDemo;
+
+public class HomePage extends Base {
+	//This is going to be my child class
+	
+	// this is the child class method
+	public void Homepagetest()
+	{
+		System.out.println("Test for home page");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// crete object of child class
+		
+		HomePage obj = new HomePage();
+		
+		obj.openbrowser("Chrome");
+		obj.login("admin", "admin");
+		obj.Homepagetest();
+		obj.logout();
+
+	}
+
+}
+
+package inheritancesDemo;
+
+public class Payments extends HomePage {
+	
+	// this class is child to homepage and grandchild to base class
+	// This is multilevel inheritance
+	public void payments()
+	{
+		System.out.println("test payments page");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Payments obj = new Payments();
+		obj.openbrowser("Chrome");
+		obj.login("admin", "admin@123");
+		obj.Homepagetest();
+		obj.payments();
+		obj.logout();
+	}
+
+}
