@@ -1,0 +1,33 @@
+package com.app.TestNGScripts;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class BeforeAfterClassAnnotation {
+	
+	// this program is just to understand the concept of before class and after class annotation
+	
+	@BeforeClass
+	public void login() {
+	System.out.println("open brower");
+	System.out.println("login");
+	}
+	@Test(priority='1')
+	public void Composeemail() {
+		System.out.println("compose email");
+		
+	}
+	@Test(priority='2')
+	public void SearchEmail() {
+		System.out.println("search email");
+		
+	}
+     @AfterClass
+	public void logout() {
+	System.out.println("logout");
+	System.out.println("close brower");
+	}
+	
+
+}
