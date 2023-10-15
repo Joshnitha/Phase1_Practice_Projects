@@ -1,0 +1,18 @@
+package com.app.junitDemo;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
+
+public class RepeatedtestDemo {
+	
+	
+	@RepeatedTest(3)
+	// execute this test 3 times
+	@DisplayName("repeatedtests")
+	public void repeatmessage()
+	{
+		System.out.println("We are learning Junit");
+	}
+
+
+}
