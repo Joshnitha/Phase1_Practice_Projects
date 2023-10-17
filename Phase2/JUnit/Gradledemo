@@ -1,0 +1,13 @@
+package ATE_Phase2.GradleProject;
+
+import org.junit.jupiter.api.Test;
+
+public class Gradledemo {
+	
+	@Test
+	public void gradleDemo()
+	{
+		System.out.println("Gradle Demo Test");
+	}
+
+}
