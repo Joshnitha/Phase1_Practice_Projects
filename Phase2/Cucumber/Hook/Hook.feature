@@ -1,5 +1,5 @@
 @all
-Feature: Testing on NinaDemo application
+Feature: Testing on NinaDemo application 
 
 Background:
 Given I am on tutorialsNinja Homepage
