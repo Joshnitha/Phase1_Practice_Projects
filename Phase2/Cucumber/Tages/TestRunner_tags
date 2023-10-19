@@ -1,0 +1,28 @@
+package runner;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="C:\\Users\\DELL\\eclipse-workspace\\Lesson5-CucumberDemo\\src\\test\\java\\features\\Hook.feature",
+   				 glue= {"steps"},
+				dryRun=false,
+				plugin={"pretty",
+						"html:target/cucumberreport.html"},
+					tags="@all" // all the scenarios of feature file will be executed
+
+						// tags="@login" // only login will run
+
+            // tags="@search" // only search will run
+
+           // tags="@AddtoCart" // only AddtoCart will run
+					    		
+					 //  tags = "not @logout" // avoid logout scenario and run the rest of the scenarios
+					
+				)
+
+public class TestRunner {
+
+}
